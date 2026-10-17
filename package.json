@@ -1,0 +1,19 @@
+{
+  "name": "shopping-list-assignment",
+  "private": true,
+  "workspaces": [
+    "apps/web",
+    "apps/orders-api"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "dev:web": "npm run dev -w apps/web",
+    "dev:orders": "npm run start:dev -w apps/orders-api",
+    "setup": "node scripts/setup.mjs",
+    "test:dotnet": "docker compose --profile tests run --rm catalog-tests"
+  },
+  "engines": {
+    "node": ">=22.12"
+  }
+}

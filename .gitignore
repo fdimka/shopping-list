@@ -1,0 +1,18 @@
+node_modules/
+dist/
+bin/
+obj/
+.env
+.env.local
+*.user
+test-results/
+dist-tests/
+
+# Local secrets and machine-specific files
+.env.*
+!.env.example
+coverage/
+.vs/
+.DS_Store
+Thumbs.db
+*.log
